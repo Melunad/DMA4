@@ -14,7 +14,7 @@ import com.example.four.databinding.FragmentRecyclerViewBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-    public class RecyclerViewFragment extends Fragment {
+public class RecyclerViewFragment extends Fragment {
 
     private FragmentRecyclerViewBinding binding;
 

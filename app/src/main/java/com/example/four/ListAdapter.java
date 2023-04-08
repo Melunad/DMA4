@@ -36,7 +36,13 @@ public class ListAdapter extends ArrayAdapter<ListItem> {
         ListItem item = items.get(position);
         TitleItem.setText(item.getTextTitle());
         DescItem.setText(item.getTextDesc());
-
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Item " + (position + 1) + " clicked", Toast.LENGTH_SHORT).show();
+                Log.d("myLogs", "Item " + (position + 1) + " clicked");
+            }
+        });
         return view;
     }
 }

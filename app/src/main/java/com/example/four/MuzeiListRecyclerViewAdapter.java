@@ -1,10 +1,12 @@
 package com.example.four;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,7 +34,13 @@ public class MuzeiListRecyclerViewAdapter extends RecyclerView.Adapter<MuzeiList
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MuzeiListItem item = muzeiList.get(position);
         holder.muzeiNameItem.setText(item.getTextUserName());
-
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Item " + (holder.getAdapterPosition() + 1) + " clicked", Toast.LENGTH_SHORT).show();
+                Log.d("myLogs", "Item " + (holder.getAdapterPosition() + 1) + " clicked");
+            }
+        });
     }
 
     @Override

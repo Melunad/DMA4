@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MyApplication</string>
     <string name="list">Item List</string>
-    <string name="user_list">User List</string>
-    <string name="user_list_title">Элемент %1$s</string>
-    <string name="user_list_item_title">Пользователь %1$s</string>
+    <string name="muzei_list">Muzei List</string>
+    <string name="muzei_list_title">Элемент %1$s</string>
+    <string name="muzei_list_item_title">Музей %1$s</string>
 </resources>

@@ -24,13 +24,13 @@
         app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
-        android:id="@+id/userListBtn"
+        android:id="@+id/muzeiListBtn"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:backgroundTint="@color/primary"
-        android:text="@string/user_list"
+        android:text="@string/muzei_list"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20sp"

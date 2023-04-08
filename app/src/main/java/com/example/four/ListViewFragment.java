@@ -32,5 +32,16 @@ public class ListViewFragment extends Fragment {
 
     }
 
-
+    private List<ListItem> initList() {
+        List<ListItem> list = new ArrayList<>();
+        for (int i = 1; i <= 200; i++) {
+            list.add(
+                    new ListItem(
+                            R.drawable.ic_launcher_background,
+                            getString(R.string.muzei_list_title, String.valueOf(i)),
+                            "Описания не введено")
+            );
+        }
+        return list;
+    }
 }

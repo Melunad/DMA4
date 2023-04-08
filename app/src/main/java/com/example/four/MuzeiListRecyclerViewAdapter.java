@@ -24,13 +24,14 @@ public class MuzeiListRecyclerViewAdapter extends RecyclerView.Adapter<MuzeiList
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.item_user_list, parent, false);
+        View view = inflater.inflate(R.layout.item_muzei_list, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MuzeiListItem item = muzeiList.get(position);
+        holder.muzeiNameItem.setText(item.getTextUserName());
 
     }
 

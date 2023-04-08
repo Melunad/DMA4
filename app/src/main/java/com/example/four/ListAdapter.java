@@ -33,6 +33,9 @@ public class ListAdapter extends ArrayAdapter<ListItem> {
         View view = inflater.inflate(this.layout, parent, false);
         TextView TitleItem = view.findViewById(R.id.TitleItem);
         TextView DescItem = view.findViewById(R.id.DescItem);
+        ListItem item = items.get(position);
+        TitleItem.setText(item.getTextTitle());
+        DescItem.setText(item.getTextDesc());
 
         return view;
     }

@@ -14,7 +14,7 @@ import com.example.four.databinding.FragmentRecyclerViewBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewFragment extends Fragment {
+    public class RecyclerViewFragment extends Fragment {
 
     private FragmentRecyclerViewBinding binding;
 
@@ -31,5 +31,16 @@ public class RecyclerViewFragment extends Fragment {
 
     }
 
+    private List<MuzeiListItem> initList() {
+        List<MuzeiListItem> list = new ArrayList<>();
+        for (int i = 1; i <= 200; i++) {
+            list.add(
+                    new MuzeiListItem(
+                            R.drawable.ic_launcher_background,
+                            getString(R.string.muzei_list_item_title, String.valueOf(i)))
 
+            );
+        }
+        return list;
+    }
 }

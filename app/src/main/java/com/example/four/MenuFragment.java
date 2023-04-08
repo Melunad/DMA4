@@ -35,7 +35,7 @@ public class MenuFragment extends Fragment {
                         .commit();
             }
         });
-        binding.userListBtn.setOnClickListener(new View.OnClickListener() {
+        binding.muzeiListBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 requireActivity().getSupportFragmentManager().beginTransaction()
